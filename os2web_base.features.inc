@@ -7,20 +7,16 @@
 /**
  * Implements hook_ctools_plugin_api().
  */
-function os2web_base_ctools_plugin_api() {
-  list($module, $api) = func_get_args();
+function os2web_base_ctools_plugin_api($module = NULL, $api = NULL) {
   if ($module == "field_group" && $api == "field_group") {
     return array("version" => "1");
   }
-  list($module, $api) = func_get_args();
   if ($module == "page_manager" && $api == "pages_default") {
     return array("version" => "1");
   }
-  list($module, $api) = func_get_args();
   if ($module == "panels" && $api == "layouts") {
     return array("version" => "1");
   }
-  list($module, $api) = func_get_args();
   if ($module == "strongarm" && $api == "strongarm") {
     return array("version" => "1");
   }
@@ -69,6 +65,7 @@ function os2web_base_image_default_styles() {
         'weight' => 2,
       ),
     ),
+    'label' => 'os2web_base_style_content',
   );
 
   // Exported image style: os2web_base_style_image.
@@ -91,6 +88,7 @@ function os2web_base_image_default_styles() {
         'weight' => 1,
       ),
     ),
+    'label' => 'os2web_base_style_image',
   );
 
   // Exported image style: os2web_base_style_medium.
@@ -130,6 +128,7 @@ function os2web_base_image_default_styles() {
         'weight' => 2,
       ),
     ),
+    'label' => 'os2web_base_style_medium',
   );
 
   // Exported image style: os2web_base_style_news_big.
@@ -152,6 +151,7 @@ function os2web_base_image_default_styles() {
         'weight' => 1,
       ),
     ),
+    'label' => 'os2web_base_style_news_big',
   );
 
   // Exported image style: os2web_base_style_news_medium.
@@ -174,6 +174,7 @@ function os2web_base_image_default_styles() {
         'weight' => 1,
       ),
     ),
+    'label' => 'os2web_base_style_news_medium',
   );
 
   // Exported image style: os2web_base_style_news_small.
@@ -196,6 +197,7 @@ function os2web_base_image_default_styles() {
         'weight' => 1,
       ),
     ),
+    'label' => 'os2web_base_style_news_small',
   );
 
   // Exported image style: os2web_base_style_rotating.
@@ -218,6 +220,7 @@ function os2web_base_image_default_styles() {
         'weight' => 1,
       ),
     ),
+    'label' => 'os2web_base_style_rotating',
   );
 
   // Exported image style: os2web_base_style_rotating_small.
@@ -240,6 +243,7 @@ function os2web_base_image_default_styles() {
         'weight' => 1,
       ),
     ),
+    'label' => 'os2web_base_style_rotating_small',
   );
 
   return $styles;

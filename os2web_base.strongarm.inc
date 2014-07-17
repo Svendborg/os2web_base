@@ -294,6 +294,9 @@ function os2web_base_strongarm() {
       'os2web_meetings_meeting_detail_view' => array(
         'custom_settings' => FALSE,
       ),
+      'spotbox' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'display' => array(
@@ -334,6 +337,9 @@ function os2web_base_strongarm() {
         ),
         'fmenu' => array(
           'weight' => '7',
+        ),
+        'metatags' => array(
+          'weight' => '40',
         ),
       ),
     ),
@@ -475,6 +481,12 @@ function os2web_base_strongarm() {
       'revision' => array(
         'custom_settings' => FALSE,
       ),
+      'spotboks' => array(
+        'custom_settings' => TRUE,
+      ),
+      'spotbox' => array(
+        'custom_settings' => TRUE,
+      ),
     ),
     'extra_fields' => array(
       'display' => array(),
@@ -483,10 +495,13 @@ function os2web_base_strongarm() {
           'weight' => '-5',
         ),
         'path' => array(
-          'weight' => '45',
+          'weight' => '2',
         ),
         'workbench_access' => array(
           'weight' => '0',
+        ),
+        'metatags' => array(
+          'weight' => '4',
         ),
       ),
     ),
@@ -608,9 +623,7 @@ function os2web_base_strongarm() {
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_options_os2web_base_contentpage';
   $strongarm->value = array(
-    0 => 'os2web-menu-contentmenu',
-    1 => 'os2web-main-menu',
-    2 => 'main-menu',
+    0 => 'menu-indholdsmenu',
   );
   $export['menu_options_os2web_base_contentpage'] = $strongarm;
 
@@ -673,7 +686,7 @@ function os2web_base_strongarm() {
   $strongarm->disabled = FALSE; /* Edit this to true to make a default strongarm disabled initially */
   $strongarm->api_version = 1;
   $strongarm->name = 'menu_parent_os2web_base_contentpage';
-  $strongarm->value = 'os2web-main-menu:0';
+  $strongarm->value = 'menu-indholdsmenu:0';
   $export['menu_parent_os2web_base_contentpage'] = $strongarm;
 
   $strongarm = new stdClass();

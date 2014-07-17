@@ -66,36 +66,6 @@ function os2web_base_field_default_field_bases() {
     'type' => 'text_long',
   );
 
-  // Exported field_base: 'field_os2web_base_field_banner'
-  $field_bases['field_os2web_base_field_banner'] = array(
-    'active' => 1,
-    'cardinality' => -1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_os2web_base_field_banner',
-    'foreign keys' => array(
-      'fid' => array(
-        'columns' => array(
-          'fid' => 'fid',
-        ),
-        'table' => 'file_managed',
-      ),
-    ),
-    'indexes' => array(
-      'fid' => array(
-        0 => 'fid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'image',
-    'settings' => array(
-      'default_image' => 0,
-      'uri_scheme' => 'public',
-    ),
-    'translatable' => 0,
-    'type' => 'image',
-  );
-
   // Exported field_base: 'field_os2web_base_field_case'
   $field_bases['field_os2web_base_field_case'] = array(
     'active' => 1,
@@ -136,30 +106,21 @@ function os2web_base_field_default_field_bases() {
     'module' => 'node_reference',
     'settings' => array(
       'referenceable_types' => array(
-        'borger_dk_permalink' => 0,
-        'contentpage' => 0,
-        'esdh_dokument' => 0,
-        'esdh_sag' => 0,
-        'files' => 0,
-        'galleri' => 0,
-        'iframe_selvbetjeningsl_sning_mm' => 0,
-        'institution' => 0,
-        'knactivity' => 0,
-        'local_plan' => 0,
+        'kontaktblok' => 0,
+        'kulturkalender' => 0,
         'media' => 0,
-        'news' => 0,
-        'ofir_job' => 0,
-        'os2web_citizenservices_service' => 0,
+        'os2bootstrap_carousel' => 0,
+        'os2web_base_contentpage' => 0,
+        'os2web_base_gallery' => 0,
+        'os2web_base_iframe' => 0,
+        'os2web_base_news' => 0,
+        'os2web_base_rotating_image' => 0,
+        'os2web_base_selfservice_link' => 0,
+        'os2web_borger_dk_article' => 0,
         'os2web_contact_contact' => 'os2web_contact_contact',
         'os2web_spotbox_box' => 0,
         'panel' => 0,
-        'person' => 0,
-        'politician' => 0,
-        'referat' => 0,
-        'right_column' => 0,
-        'rotating_image' => 0,
-        'selvbetjeningslinks' => 0,
-        'tema' => 0,
+        'spotbokse2' => 0,
         'webform' => 0,
       ),
       'view' => array(
@@ -373,32 +334,6 @@ function os2web_base_field_default_field_bases() {
     'deleted' => 0,
     'entity_types' => array(),
     'field_name' => 'field_os2web_base_field_inh_colm',
-    'foreign keys' => array(),
-    'indexes' => array(
-      'value' => array(
-        0 => 'value',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'list',
-    'settings' => array(
-      'allowed_values' => array(
-        0 => 0,
-        1 => 1,
-      ),
-      'allowed_values_function' => '',
-    ),
-    'translatable' => 0,
-    'type' => 'list_boolean',
-  );
-
-  // Exported field_base: 'field_os2web_base_field_issubsit'
-  $field_bases['field_os2web_base_field_issubsit'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_os2web_base_field_issubsit',
     'foreign keys' => array(),
     'indexes' => array(
       'value' => array(
@@ -772,64 +707,6 @@ function os2web_base_field_default_field_bases() {
     'type' => 'taxonomy_term_reference',
   );
 
-  // Exported field_base: 'field_os2web_base_field_ref_focu'
-  $field_bases['field_os2web_base_field_ref_focu'] = array(
-    'active' => 1,
-    'cardinality' => 1,
-    'deleted' => 0,
-    'entity_types' => array(),
-    'field_name' => 'field_os2web_base_field_ref_focu',
-    'foreign keys' => array(
-      'nid' => array(
-        'columns' => array(
-          'nid' => 'nid',
-        ),
-        'table' => 'node',
-      ),
-    ),
-    'indexes' => array(
-      'nid' => array(
-        0 => 'nid',
-      ),
-    ),
-    'locked' => 0,
-    'module' => 'node_reference',
-    'settings' => array(
-      'referenceable_types' => array(
-        'borger_dk_permalink' => 0,
-        'esdh_dokument' => 0,
-        'esdh_sag' => 0,
-        'files' => 0,
-        'institution' => 0,
-        'knactivity' => 0,
-        'local_plan' => 0,
-        'media' => 0,
-        'ofir_job' => 0,
-        'os2web_base_contentpage' => 0,
-        'os2web_base_gallery' => 0,
-        'os2web_base_iframe' => 0,
-        'os2web_base_news' => 0,
-        'os2web_base_rotating_image' => 0,
-        'os2web_base_selfservice_link' => 0,
-        'os2web_spotbox_box' => 'os2web_spotbox_box',
-        'panel' => 0,
-        'person' => 0,
-        'politician' => 0,
-        'referat' => 0,
-        'right_column' => 0,
-        'tema' => 0,
-        'webform' => 0,
-      ),
-      'view' => array(
-        'args' => array(),
-        'display_name' => '',
-        'view_name' => '',
-      ),
-    ),
-    'translatable' => 0,
-    'type' => 'node_reference',
-  );
-
   // Exported field_base: 'field_os2web_base_field_ref_node'
   $field_bases['field_os2web_base_field_ref_node'] = array(
     'active' => 1,
@@ -910,21 +787,18 @@ function os2web_base_field_default_field_bases() {
     'module' => 'node_reference',
     'settings' => array(
       'referenceable_types' => array(
-        'activity' => 0,
-        'borger_dk_permalink' => 0,
-        'files' => 0,
-        'forum' => 0,
-        'institution' => 0,
-        'local_plan' => 0,
+        'kontaktblok' => 0,
         'media' => 0,
+        'os2bootstrap_carousel' => 0,
         'os2web_base_contentpage' => 0,
+        'os2web_base_gallery' => 0,
         'os2web_base_iframe' => 0,
         'os2web_base_news' => 0,
-        'person' => 0,
-        'politician' => 0,
-        'referat' => 0,
-        'right_column' => 0,
-        'tema' => 'tema',
+        'os2web_base_rotating_image' => 0,
+        'os2web_base_selfservice_link' => 0,
+        'os2web_borger_dk_article' => 0,
+        'panel' => 0,
+        'spotbokse2' => 0,
         'webform' => 0,
       ),
       'view' => array(
@@ -961,21 +835,21 @@ function os2web_base_field_default_field_bases() {
     'module' => 'node_reference',
     'settings' => array(
       'referenceable_types' => array(
-        'activity' => 'activity',
-        'borger_dk_permalink' => 0,
-        'files' => 'files',
-        'forum' => 0,
-        'institution' => 'institution',
-        'local_plan' => 'local_plan',
+        'kontaktblok' => 0,
+        'kulturkalender' => 0,
         'media' => 'media',
+        'os2bootstrap_carousel' => 0,
         'os2web_base_contentpage' => 'os2web_base_contentpage',
+        'os2web_base_gallery' => 0,
         'os2web_base_iframe' => 0,
         'os2web_base_news' => 'os2web_base_news',
-        'person' => 'person',
-        'politician' => 'politician',
-        'referat' => 'referat',
-        'right_column' => 0,
-        'tema' => 'tema',
+        'os2web_base_rotating_image' => 0,
+        'os2web_base_selfservice_link' => 0,
+        'os2web_borger_dk_article' => 'os2web_borger_dk_article',
+        'os2web_contact_contact' => 0,
+        'os2web_spotbox_box' => 0,
+        'panel' => 0,
+        'spotbokse2' => 0,
         'webform' => 'webform',
       ),
       'view' => array(
@@ -1102,30 +976,21 @@ function os2web_base_field_default_field_bases() {
     'module' => 'node_reference',
     'settings' => array(
       'referenceable_types' => array(
-        'borger_dk_permalink' => 0,
-        'esdh_dokument' => 0,
-        'esdh_sag' => 0,
-        'files' => 0,
-        'institution' => 0,
-        'knactivity' => 0,
         'kontaktblok' => 0,
-        'local_plan' => 0,
+        'kulturkalender' => 0,
         'media' => 0,
-        'ofir_job' => 0,
+        'os2bootstrap_carousel' => 0,
         'os2web_base_contentpage' => 0,
         'os2web_base_gallery' => 0,
         'os2web_base_iframe' => 0,
         'os2web_base_news' => 0,
         'os2web_base_rotating_image' => 0,
         'os2web_base_selfservice_link' => 'os2web_base_selfservice_link',
-        'os2web_citizenservices_service' => 0,
+        'os2web_borger_dk_article' => 0,
+        'os2web_contact_contact' => 0,
         'os2web_spotbox_box' => 0,
         'panel' => 0,
-        'person' => 0,
-        'politician' => 0,
-        'referat' => 0,
-        'right_column' => 0,
-        'tema' => 0,
+        'spotbokse2' => 0,
         'webform' => 0,
       ),
       'view' => array(
@@ -1207,29 +1072,21 @@ function os2web_base_field_default_field_bases() {
     'module' => 'node_reference',
     'settings' => array(
       'referenceable_types' => array(
-        'borger_dk_permalink' => 0,
-        'esdh_dokument' => 0,
-        'esdh_sag' => 0,
-        'files' => 0,
-        'institution' => 0,
-        'knactivity' => 0,
         'kontaktblok' => 0,
-        'local_plan' => 0,
+        'kulturkalender' => 0,
         'media' => 0,
-        'ofir_job' => 0,
+        'os2bootstrap_carousel' => 0,
         'os2web_base_contentpage' => 0,
         'os2web_base_gallery' => 0,
         'os2web_base_iframe' => 0,
         'os2web_base_news' => 0,
         'os2web_base_rotating_image' => 0,
         'os2web_base_selfservice_link' => 0,
+        'os2web_borger_dk_article' => 0,
+        'os2web_contact_contact' => 0,
         'os2web_spotbox_box' => 'os2web_spotbox_box',
         'panel' => 0,
-        'person' => 0,
-        'politician' => 0,
-        'referat' => 0,
-        'right_column' => 0,
-        'tema' => 0,
+        'spotbokse2' => 0,
         'webform' => 0,
       ),
       'view' => array(

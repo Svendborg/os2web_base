@@ -58,7 +58,6 @@ function os2web_base_field_group_info() {
       2 => 'field_os2web_base_field_related',
       3 => 'field_os2web_base_field_kle_ref',
       4 => 'field_os2web_base_field_hidlinks',
-      5 => 'field_os2web_show_on_parent',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -360,8 +359,7 @@ function os2web_base_field_group_info() {
     'weight' => '5',
     'children' => array(
       0 => 'field_os2web_base_field_image',
-      1 => 'field_os2web_base_field_lead_img',
-      2 => 'field_os2web_base_field_media',
+      1 => 'field_os2web_base_field_media',
     ),
     'format_type' => 'htab',
     'format_settings' => array(
@@ -596,7 +594,8 @@ function os2web_base_field_group_info() {
     'children' => array(
       0 => 'field_os2web_base_field_selfserv',
       1 => 'field_os2web_base_field_related',
-      2 => 'group_relationer_sub',
+      2 => 'field_os2web_base_ext_link',
+      3 => 'field_os2web_base_field_ext_link',
     ),
     'format_type' => 'htab',
     'format_settings' => array(

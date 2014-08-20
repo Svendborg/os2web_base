@@ -73,7 +73,6 @@ function os2web_base_user_default_permissions() {
     'name' => 'bypass node access',
     'roles' => array(
       'Administrator' => 'Administrator',
-      'Editor' => 'Editor',
       'Webmaster' => 'Webmaster',
     ),
     'module' => 'node',
